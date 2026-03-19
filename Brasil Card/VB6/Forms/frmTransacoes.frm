@@ -602,7 +602,7 @@ Private Function MontarTransacao() As clsTransacao
     t.NumCartao = GetCartao()
     t.valor = CDbl(txtValor.Text)
     t.DataTransacao = CDate(txtData.Text)
-    t.descricao = txtDescricao(0).Text
+    t.Descricao = txtDescricao(0).Text
 
     Set MontarTransacao = t
 
