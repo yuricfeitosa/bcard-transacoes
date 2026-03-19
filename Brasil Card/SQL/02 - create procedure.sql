@@ -1,0 +1,41 @@
+USE [BCARD]
+GO
+
+/****** Object:  StoredProcedure [dbo].[sp_TotalTransacoesPorPeriodo]    Script Date: 18/03/2026 22:09:29 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[sp_TotalTransacoesPorPeriodo]
+	@DATA_INICIAL DATETIME,
+	@DATA_FINAL DATETIME
+AS
+BEGIN
+	SET NOCOUNT ON;
+
+	IF @DATA_INICIAL IS NULL OR @DATA_FINAL IS NULL
+	BEGIN
+		RAISERROR('As datas devem ser informadas!',16,1)
+		RETURN
+	END
+
+	IF @DATA_INICIAL > @DATA_FINAL
+	BEGIN
+		RAISERROR('A data inicial não pode ser maior que a data final!',16,1)
+		RETURN
+	END
+	
+	SELECT
+		TRA_NUM_CARTAO,
+		SUM(TRA_VALOR) AS VALOR_TOTAL,
+		COUNT(*) AS QTD_TRANSACOES
+	FROM BCA_TRANSACOES
+	WHERE TRA_DATA BETWEEN @DATA_INICIAL AND @DATA_FINAL
+	GROUP BY TRA_NUM_CARTAO
+
+END
+GO
+
