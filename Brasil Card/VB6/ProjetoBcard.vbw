@@ -1,4 +1,4 @@
-¢ = 49, -11, 1368, 853, C, 104, 104, 1465, 866, C
-modConexao = 119, 20, 1440, 646, C
-clsTransacao = 182, 182, 1503, 808, C
-clsTransacaoDAO = 13, 120, 1334, 746, C
+¢ = 0, 0, 0, 0, C, 26, 26, 1206, 668, C
+modConexao = 182, 182, 1362, 824, C
+clsTransacao = 208, 208, 1388, 850, C
+clsTransacaoDAO = 234, 234, 1414, 876, C
