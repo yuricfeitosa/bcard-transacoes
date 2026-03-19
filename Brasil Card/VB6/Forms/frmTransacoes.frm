@@ -270,6 +270,82 @@ Begin VB.Form ¢
       Top             =   6960
       Width           =   1455
    End
+   Begin VB.Label Label2 
+      Caption         =   "*"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   12
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H000000FF&
+      Height          =   255
+      Index           =   3
+      Left            =   7080
+      TabIndex        =   22
+      Top             =   5520
+      Width           =   135
+   End
+   Begin VB.Label Label2 
+      Caption         =   "*"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   12
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H000000FF&
+      Height          =   255
+      Index           =   2
+      Left            =   7080
+      TabIndex        =   21
+      Top             =   4560
+      Width           =   135
+   End
+   Begin VB.Label Label2 
+      Caption         =   "*"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   12
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H000000FF&
+      Height          =   255
+      Index           =   1
+      Left            =   7080
+      TabIndex        =   20
+      Top             =   3600
+      Width           =   135
+   End
+   Begin VB.Label Label2 
+      Caption         =   "*"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   12
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H000000FF&
+      Height          =   255
+      Index           =   0
+      Left            =   7080
+      TabIndex        =   19
+      Top             =   2640
+      Width           =   135
+   End
    Begin VB.Label descricao 
       Caption         =   "Descrição:"
       BeginProperty Font 
@@ -743,3 +819,5 @@ Cancelado:
     Exit Sub
 
 End Sub
+
+
